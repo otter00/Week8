@@ -121,6 +121,7 @@ color: gray;
 }
 
 .main-content__about {
+    position: relative;
     display: grid;
     grid-template-rows: 10% 90%;
 }
@@ -230,4 +231,8 @@ button:hover,
 .name:hover,
 .logo-pic:hover {
     cursor: pointer;
+}
+
+a {
+    text-decoration: none;
 }
