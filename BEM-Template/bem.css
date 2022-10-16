@@ -1,19 +1,17 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
+@import url('fonts/IntroDemoCond-BlackCAPS.otf');
 
 .body {
-    min-height:100%;
-    max-width: 100%;
+    max-width: 90%;
 }
 
 .header {
     max-width: 100vw;
     min-height: 40px;
-
-    padding: 4px;
 
     font-family: Arial, Helvetica, sans-serif;
 
@@ -21,9 +19,16 @@
     justify-content: space-between;
 }
 
+.header-hr {
+    color: rgb(243, 243, 243);
+}
+
 .header__logo-container {
     max-width: 50%;
     width: 50%;
+
+    padding-top: 4px;
+    padding-left: 1%;
 
     display: flex;
     align-items: center;
@@ -49,27 +54,31 @@
 }
 
 .name {
+    padding-top: 6px;
 color: gray;
 }
 
 .main {
-max-width: 100%;
+    position: relative;
+    max-width:100%;
+
+    overflow-y: hidden;
 }
 
 .main-background {
     position: absolute;
     right: 0%;
-    bottom: 0%;
+    top: 5%
 }
 
 .backgound-pic {
     max-width: 100vw;
-    min-height: 80vh;
+    max-height: 80vh;
 }
 
 .background-guy {
-    max-height: 80vh;
-    max-width: 100vw;
+    max-height: 75vh;
+    max-width: 95vw;
 
     right: 10%;
 }
@@ -91,9 +100,12 @@ max-width: 100%;
     border-radius: 100px;
 
     background-color: #5222D0;
+    border: none;
 
     font-weight: 700;
     color: white;
+
+    word-wrap: break-word;
 }
 
 .button-cart-sm {
@@ -104,8 +116,8 @@ max-width: 100%;
 
     min-height: 8%;
     width: 16%;
-    font-size: 100%;
-    word-wrap: break-word;
+
+    font-size: 1vw;
 }
 
 .main-content__about {
@@ -133,19 +145,89 @@ max-width: 100%;
 
 .main-content__information {
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    padding-left: 3%;
+    grid-template-rows: 1fr 30% 30%;
+    min-height: 80%;
+    max-width: 70%;
+
+    padding-left: 10%;
 }
 
-.head-text {
-    display: flex;
+h1, h2, p {
+    margin: 0;
 }
 
-.sub-text {
-    display: flex;
+.information-title {
+font-size: 3.2vw;
+font-weight: 800;
+line-height: 72px;
+
+padding-top: 8%;
+
+font-family: 'Work Sans', sans-serif;
+word-wrap: break-word;
+}
+
+.information-subtitle {
+    font-weight: 300;
+    font-size: 1.5vw;
+    line-height: 32px;
+
+    padding-top: 3%;
+
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
 .button-cart-lg {
-    width: 270px;
-    height: 84px;
+    width: 15vw;
+height: 8vh;
+
+font-size: 2vw;
+}
+
+.button-cart-lg > span {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer {
+    min-height: 85px;
+    max-width: 100%;
+    overflow: hidden;
+
+    display: flex;
+}
+
+.footer-links {
+    max-width: 40%;
+    padding-left: 5%;
+
+    flex-grow: 1;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer-links__text {
+    flex-shrink: 1;
+    font-size: 1.3vw;
+    color:#5222D0;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.footer-links__text:hover, 
+.information-title:hover,
+.information-subtitle:hover
+  {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+button:hover,
+.company-name__text:hover,
+.company-name__logo:hover,
+.name:hover,
+.logo-pic:hover {
+    cursor: pointer;
 }
