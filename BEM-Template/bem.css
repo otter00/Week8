@@ -104,8 +104,6 @@ color: gray;
 
     font-weight: 700;
     color: white;
-
-    word-wrap: break-word;
 }
 
 .button-cart-sm {
@@ -162,10 +160,12 @@ font-size: 3.2vw;
 font-weight: 800;
 line-height: 72px;
 
-padding-top: 8%;
-
 font-family: 'Work Sans', sans-serif;
-word-wrap: break-word;
+}
+
+.head {
+    padding-top: 8%;
+    word-wrap: break-word;
 }
 
 .information-subtitle {
