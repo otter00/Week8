@@ -1,6 +1,6 @@
-* {
+/* * {
     border: 1px solid red;
-}
+} */
 
 @import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@500&display=swap');
 @import url('fonts/IntroDemoCond-BlackCAPS.otf');
@@ -8,13 +8,14 @@
 .main__second-page {
     max-width: 100vw;
     min-height: 100vh;
-    padding: 1% 2% 0 2%;
+    padding: 0 2%;
+    /* padding: 1% 2% 0 2%; */
 }
 
 .main-container {
     display: grid;
     grid-template-rows: 10% 90%;
-    min-height: 100vh;
+    min-height: 120vh;
 
     font-family: 'Work Sans', sans-serif;
 }
@@ -27,6 +28,8 @@
 }
 
 .second-page__button-cart {
+    padding-right: 7%;
+
     display: inline-flex;
     align-items: center;
     justify-content: end;
@@ -43,6 +46,8 @@ font-size: 1vw;
 .main-container__content {
     display: grid;
     grid-template-rows: 10% 90%;
+
+    max-width: 100vw;
 }
 
 h1 {
@@ -53,6 +58,8 @@ h1 {
 .cards-container {
     display: grid;
     grid-template-rows: 60% 40%;
+    
+    /* gap: 2%; */
 }
 
 .line {
@@ -72,15 +79,8 @@ h1 {
     display: grid;
     grid-template-rows: 49% 10% 39%;
 
-    padding-left: 12%;
+    padding-left: 10%;
     padding-right: 12%;
-}
-
-.card__second-line {
-    display: grid;
-    grid-template-rows: 20% 80%;
-
-    gap: 2%;
 }
 
 .information-title-sm {
@@ -89,15 +89,15 @@ h1 {
     font-size:3.2vh;
     line-height: 4vh;
 
-    padding-left: 5%;
-    padding-top: 2%;
+    /* padding-left: 5%; */
+    padding-top: 5%;
 }
 
-.card-pic {
+.card-pic, .news {
     background-color: #EC615B;
 }
 
-.first-card-in-line {
+.main-card-in-line {
     border: 1px solid red;
 }
 
@@ -118,10 +118,56 @@ top: 8%;
 
 .information-subtitle__span {
     font-weight: 300;
-    font-size: 1.3vw;
+    font-size: 1.4vw;
+
+    display: flex;
+    flex-shrink: 1;
 
     padding-top: 3%;
-    padding-left: 5%;
+    /* padding-left: 5%; */
 
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.card__second-line {
+    display: grid;
+    grid-template-rows: 20% 80%;
+
+    gap: 2%;
+
+    padding: 0 3%;
+}
+
+.sm-content-gap {
+    padding-left: 12%;
+}
+
+.news > .sm-content-gap {
+    padding-left: 3%;
+}
+
+.news-title {
+    color: white;
+}
+
+.news-card {
+padding:0 12%;
+}
+
+.news {
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    min-height: 80%;
+}
+
+.mail-input__value {
+    padding-left: 5%;
+    color: grey;
+
+    min-height: 42px;
+}
+
+input {
+    width: 90%;
+    max-width: 90%;
 }
